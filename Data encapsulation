@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Programmer
+{
+  private:
+    string name; // Private variable
+
+  public:
+  string getName()
+    {
+        return name;
+    }
+
+    void setName(string newName)
+    {
+        name = newName;
+    }
+};
+
+int main()
+{
+    Programmer p;
+    p.setName("Geek");                        
+    cout << "Name=> " << p.getName() << end
+    return 0;
+}
