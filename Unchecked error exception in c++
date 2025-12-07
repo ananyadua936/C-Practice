@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int Gfg1 = 9, Gfg2 = 0;
+
+    try {
+        if (Gfg2 != 0)
+            cout << Gfg1 / Gfg2;
+        else
+            throw Gfg2; // throwing if Gfg2 is zero
+    }
+    catch (int i) 
+    {
+        cout << "Division by zero: " << i << endl;
+    }
+
+    return 0;
+}
