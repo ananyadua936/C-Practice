@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  cout << "Hello" << endl;
+         // Setw
+    cout << setw(10) << 42 <<endl;
+        // Set precision
+    cout << setprecision(3) << 3.14159 << endl;
+       // fixed-point notation
+    cout << fixed << 3.14159 << endl;
+        //scientific notation
+    cout << scientific << 3.14159 << endl;
+          //  decimal point 
+    cout << showpoint << 42.0;
+      return 0;
+}
