@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int division(int a, int b)
+{
+  if (b == 0)
+  {
+    throw "Division by zero!";
+  }
+    
+  return int(a / b);
+}
+
+// Driver code
+int main()
+{
+  int x = 50;
+  int y = 0;
+  int answer = 0;
+  
+  try
+  {
+    answer = division(x, y);
+    cout << " Output: " << answer << endl;
+  }
+    
+  catch (const char *errorMessage)
+  {
+    cout << errorMessage << endl;
+  }
+  
+  return 0;
+}
