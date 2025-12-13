@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main
+{
+    int x = 10;
+    int& refrence = x;
+    cout << reference << endl;
+    reference = 22;
+    cout << reference;
+     return 0;
+}
