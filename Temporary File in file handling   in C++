@@ -1,0 +1,22 @@
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main()
+{
+    FILE* fp = tmpfile();
+    char write[] = "Welcome to Geeks For Geeks";
+
+    if (fp == NULL) 
+    {
+        perror("Error creating temporary file");
+        exit(1);
+    }
+    fputs(write, fp);
+    rewind(fp);
+    char read[100];
+    fgets(read, sizeof(read), fp);
+    cout << read;
+    fclose(fp);
+return 0;
+}
